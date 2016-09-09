@@ -1,0 +1,246 @@
+/*
+ * Start Bootstrap - Full Slider (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+
+
+/* bootstrap modifications */
+a {
+}
+
+a:hover {
+	text-decoration:         none;
+}
+/***************************/
+
+
+
+ul {
+	list-style: none;
+}
+
+li {
+	margin: 0 10px 0 10px;
+	float: right;
+	border-radius: 1vh;
+}
+
+li:hover {
+	background: black;
+	border-radius: 1vh;
+	cursor: pointer;
+}
+
+
+/* general classes */
+html,
+body {
+	font-family:             'Roboto';
+	/*font-family: 'Open Sans Condensed', sans-serif;*/
+	overflow: hidden;
+}
+/*******************/
+
+
+h4.title {
+	margin-left: 1vw;
+	margin-right: 1vw;
+	font-size: 200%;
+	font-family: 'Roboto';
+	font-weight: 400;
+	color: #F44336;
+}
+
+
+
+/* animations */
+.ease-in {
+	transition:              all 0.8s ease;
+	-moz-transition:         all 0.8s ease;
+	-webkit-transition:      all 0.8s ease;
+}
+
+.removed {
+	display: none;
+}
+/**************/
+
+
+
+.circle-pic {
+	max-width:               35vh;
+	border-radius:           50%;
+	/*opacity:                 0;*/
+}
+
+
+
+/* intro */
+#top-cover {
+	height: 65vh;
+	width:  100%;
+	overflow: hidden;
+	border-bottom: solid 1px black;
+	/*border-bottom: solid 1px #E0E0E0;*/
+	background: white;
+	/*background: transparent;*/
+	z-index: 0;
+}
+
+#profile-pic {
+	position: relative;
+	top: 65vh;
+	/*center*/
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+#profile-pic.show {
+	transform:               translateY(-37vh);
+	-webkit-transform:       translateY(-37vh);
+}
+
+.navigation {
+	position: absolute;
+	top: 100%;
+	right: 0;
+}
+
+.navigation.show {
+	transform: translateY(-3.8vh);
+	-webkit-transform: translateY(-3.8vh);
+}
+
+.nav-text {
+	font-size: 2.5vh;
+}
+
+.nav-text:hover {
+	color: white;
+}
+
+#bottom-cover {
+	position: absolute;
+	top: 65%;
+	width: 100%;
+	height: 35vh;
+	overflow: hidden;
+	background: white;
+	border-top: solid 1px black;
+	/*border-top: solid 1px #E0E0E0;*/
+	/*background: transparent;*/
+	z-index: 0;
+}
+
+.intro-text {
+	position: absolute;
+	top: -6vh;
+	font-size: 2.5vh;
+	/* center element */
+	left: 50%;
+	transform: 				 translate(-50%, 0);
+	-webkit-transform:       translate(-50%, 0);
+}
+
+.intro-text.show {
+	transform:               translate(-50%, 6.2vh);
+	-webkit-transform:       translate(-50%, 6.2vh);
+}
+/*********/
+
+
+
+/* actual web-page */
+.page-wrapper {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	overflow: auto;
+}
+
+.center {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.card {
+	width: 100%;
+	height: auto;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+}
+
+.card-wrapper {
+	overflow: hidden;
+	border: 0.15em black solid;
+	background-position: center;
+}
+
+.card-heading {
+	font-family: 'Open Sans';
+	font-size: 300%;
+	font-weight: 300;
+	text-align: center;
+}
+
+#project-website:hover {
+	cursor: pointer;
+}
+
+#project-maps:hover {
+	cursor: pointer;
+}
+
+#project-pokemon:hover {
+	cursor: pointer;
+}
+
+.card-portrait {
+	width: 100%;
+	max-height: 60vh;
+	overflow: hidden;
+}
+/*******************/
+
+
+
+/* footer */
+.footer {
+	position: fixed;
+	top: 95%;
+}
+
+/* I don't know why I have to put both to cursor: pointer when i'm just trying to hover only one to get the same effect */
+a.social-media:hover {
+	cursor:                  pointer;
+}
+
+i:hover {
+	transform: 				 translateY(-3px);
+	cursor:                  pointer;
+}
+/**********/
+
+
+/* different screen sizes */
+@media (max-width: 600px) {
+
+}
+@media (min-width: 568px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width:1200px) {
+
+}
+/**************************/
