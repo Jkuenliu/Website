@@ -9,7 +9,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 		<!-- Google Font -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,900" rel="stylesheet">
 		<script src="https://use.fontawesome.com/89c949cc4a.js"></script>
 		<!--<link href='https://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>-->
         <!--<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>-->
@@ -27,92 +27,134 @@
 	<body>
 		<!-- the covers are first together covering the entire website. Afterwards they will split revealing the entire
 		 	 thing -->
-		<!-- designed to cover the top part of the website. It will shrink later to become a navbar -->
-		<div id="top-cover" class="ease-in">
-			<img src="SmileMan3.jpg" id="profile-pic" class="center-block circle-pic ease-in">
-			<!--<ul class="navigation ease-in">
-				<li class="ease-in">
-					<a class="nav-text">Projects</a>
-				</li>
-				<li class="ease-in">
-					<a class="nav-text">About Me</a>
-				</li>
-			</ul>!-->
-		</div>
-		<!-- designed to cover teh bottom part of the website -->
-		<div id="bottom-cover" class="ease-in">
-			<p id="intro-name" class="intro-text ease-in">Hi, my name is Jeffrey</p>
-			<p id="intro-identity" class="intro-text ease-in">I'm an undergraduate at U of T</p>
-			<p id="intro-action" class="intro-text ease-in">I like coding things</p>
-		</div>
-
-		<!-- after the covers are shrunk the main page will be revealed -->
-		<div class="container-fluid page-wrapper">
-			<!-- projects gallery -->
-			<div class="col-md-10 center">
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-wrapper">
-							<div id="project-website" class="card-heading ease-in">
-								Website
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-wrapper">
-							<div id="project-maps" class="card-heading ease-in">
-								Maps
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="card">
-						<div  class="card-wrapper">
-							<div id="project-pokemon" class="card-heading ease-in">
-								Pokemon
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--<div class="col-md-6">
-					<div class="card">
-						<div class="card-wrapper">
-						</div>
-					</div>
-				</div>!-->
+		<!--<div class="splash-page ease-in">
+			<div class="center-center">
+				<img class="circle-pic" src="SmileMan3.jpg">
 			</div>
-			<footer class="footer center">
+		</div>-->
+
+
+		<!-- after splash-page the main page will be revealed -->
+		<div class="page-wrapper">
+			<div class="container-fluid projects-tray ease-in">
+				<!--<div class="projects-tray-header">
+					Projects
+				</div>-->
+				<!--<div class="projects-list">-->
+				<!--<div class="col-md-12">
+					<div class="group-title">
+						Identity
+					</div>
+				</div>-->
+				<div class="col-md-12">
+					<div class="card removed">
+						<div class="card-portrait">
+
+						</div>
+						<div class="card-heading">
+							<span class="card-title"> About Me </span>
+							<i class="left-arrow fa fa-caret-left fa-2x" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="group-title">
+						Coding Projects
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="card">
+						<div class="card-portrait">
+							<img src="art.jpg">
+						</div>
+						<div class="card-heading">
+							<span class="card-title"> Personal Website </span>
+							<i class="left-arrow fa fa-caret-left fa-2x" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="card">
+						<div class="card-portrait">
+							<img src="maps0.PNG">
+						</div>
+						<div class="card-heading">
+							<span class="card-title"> City Maps </span>
+							<i class="left-arrow fa fa-caret-left fa-2x" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="card">
+						<div class="card-portrait">
+							<img src="pokemon0.PNG">
+						</div>
+						<div class="card-heading">
+							<span class="card-title"> Verilog Pokemon </span>
+							<i class="left-arrow fa fa-caret-left fa-2x" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+				<!--</div>-->
+			</div>
+
+			<!-- this will help center the article-wrapper -->
+			<div id="article-margin" class="col-md-2"> </div>
+
+			<div class="article-wrapper shrunk ease-in">
+				<i id="menu-arrow" class="fa fa-caret-right fa-2x ease-in" aria-hidden="true"></i>
+                <div class="article-background">
+                    <div id="about-me" class="article shrunk show">
+                        <div class="profile-card container-fluid">
+                            <img src="SmileMan3.jpg" class="circle-pic col-md-3 col-xs-12 profile-pic">
+                            <div class="profile-text col-md-5">
+                                Hello my name is Jeffrey! I'm an Electrical Engineering student whose looking to get his
+                                foot in the door with software.
+                                <br>
+                                <br>
+                                Here is some of the projects I have done so far.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div id="article-website" class="article shrunk">
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+				</div>
+				<div id="article-maps" class="article shrunk">
+					This is maps
+				</div>
+				<div id="article-pokemon" class="article shrunk">
+					This is pokemon
+				</div>
+			</div>
+
+			<footer class="footer">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-12">
-							<center>
-								<a class="social-media" href="https://www.linkedin.com/in/jeffrey-liu-0b2107b4?trk=nav_responsive_tab_profile" target="_blank">
-									<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-								</a>
-								<a class="social-media" href="https://github.com/Jkuenliu" target="_blank">
-									<i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
-								</a>
-								<!--<a class="social-media" href="mailto:kuenjeffrey@hotmail.com" target="_blank">
-									<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-								</a>!-->
-								<a class="social-media" href="JeffreyKuenLiu.pdf" target="_blank">
-									<i class="fa fa-file-text fa-2x" aria-hidden="true"></i>
-								</a>
-							</center>
+							<a class="social-media" href="https://www.linkedin.com/in/jeffrey-liu-0b2107b4?trk=nav_responsive_tab_profile" target="_blank">
+								<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+							</a>
+							<a class="social-media" href="https://github.com/Jkuenliu" target="_blank">
+								<i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+							</a>
+							<a class="social-media" href="JeffreyKuenLiu.pdf" target="_blank">
+								<i class="fa fa-file-text fa-2x" aria-hidden="true"></i>
+							</a>
 						</div>
 					</div>
 				</div>
 			</footer>
 		</div>
 
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- typed.js -->
+		<script src="typed-master/js/typed.js"></script>
 		<!-- Custom Javascript-->
 		<script src="js/scrollAnimation.js"></script>
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
-		</script>
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
 				integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
