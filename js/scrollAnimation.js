@@ -1,88 +1,17 @@
-/*function projectMapsSlideShow(currentSlide) {
-    console.log("currentSlide");
-    $("#project-maps").setAttribute("src", "maps" + currentSlide + ".PNG");
-}
-
-function projectPokemonSlideShow(currentSlide) {
-    $("#project-pokemon").src = "pokemon" + currentSlide + ".PNG";
-    $("#project-website").css({"background": "white"});
-    $("#project-maps").css({"background": "white"});
-}
-
-//controls when to stop the slide show
-var slideShowControl;
-
-function clearCardBackground() {
-    $("#project-website").css({"background": "white"});
-    $("#project-pokemon").css({"background": "white",
-        "color": "black"});
-    $("#project-maps").css({"background": "white"});
-    clearInterval(slideShowControl);
-}
-
-function projectMapsHoverEffect() {
-    var test = 0;
-    //to give the user an immediate response when hovered over the banner
-    slideShowControl = setInterval(function () {
-        test += 1;
-        test = test % 3;
-        projectMapsSlideShow(test);
-    }, 1000);
-}
-
-function projectPokemonHoverEffect() {
-    var test = 0;
-    //to give the user an immediate response when hovered over the banner
-    slideShowControl = setInterval(function () {
-        test += 1;
-        test = test % 3;
-        projectPokemonSlideShow(test);
-    }, 1000);
-}*/
-
-//hover effects
-/*$("#project-maps").hover(
-    projectMapsHoverEffect,
-    clearCardBackground
-);
-
-$("#project-pokemon").hover(
-    projectPokemonHoverEffect,
-    clearCardBackground
-);*/
-
-
-//for projects-tray resize
-/*$(".projects-tray").resize(function () {
-    console.log("hello world");
-    var screenSize = $("window").width();
-    var traySize = $(".projects-tray").width();
-    var articleWrapperMarginLeft = screenSize - traySize;
-    console.log(articleWrapperMarginLeft);
-    $(".article-wrapper").css({"margin-left": articleWrapperMarginLeft + 5});
-});*/
-
-//set projects-tray height
-/*var projectsHeader = $(".projects-tray-header");
-var projectsList = $(".projects-list");
-console.log(projectsHeader.height());
-projectsList.css({"padding-top": 2*projectsHeader.height()});*/
-/*
-projectsHeader.css({"width": projectsTray.width()});
-function changeProjectTrayHeight () {
-    var projectsHeader = $(".projects-tray-header");
-    var projectsTray = $(".projects-tray");
-    projectsHeader.css({"width": projectsTray.width()});
-}
-
-$(window).resize(changeProjectTrayHeight);*/
-
-
 //on click
 var projectCards = document.getElementsByClassName("card");
 var menuArrow = document.getElementById("menu-arrow");
 var articles = document.getElementsByClassName("article");
 //var isTrayHidden = false;
+
+//calculating the initial margin needed for the article
+var screenWidth = $(window).width();
+//var trayWidth = document.getElementsByClassName("projects-tray")[0].offsetWidth;
+var articleWrapperWidth = document.getElementsByClassName("article-wrapper")[0].offsetWidth;
+var margin = (screenWidth - articleWrapperWidth) / 2;
+console.log(margin);
+
+//$(".article-wrapper").css({"margin-left": margin + "px"});
 
 function centerArticle() {
 
@@ -96,19 +25,25 @@ function centerArticle() {
 
     articleWrapper.css({"margin-left": margin});*/
 
-    article.removeClass("shrunk");
+    //article.removeClass("shrunk");
     articleWrapper.removeClass("shrunk");
+
+
     //articleWrapper.removeClass("col-md-9");
     //articleWrapper.addClass("col-md-8");
     //article.removeClass("col-md-9");
-    article.addClass("col-md-8");
+
+
+    //article.addClass("col-md-8");
 
 }
 
 function shrinkProjectsTray() {
     var projectsTray = $(".projects-tray");
     projectsTray.addClass("slide-out");
-    isTrayHidden = true;
+    /*if($(window).width() < 700) {
+        projectsTray.removeClass("slide-out");
+    }*/
     centerArticle();
 }
 
@@ -133,6 +68,8 @@ function addOldCard() {
 }
 
 function openNewArticle() {
+    document.getElementById('pokemon-video').pause();
+
     shrinkProjectsTray();
 
     var cardIndex = $(this).index(".card");
@@ -163,41 +100,28 @@ function openProjectsTray() {
 
     //articleWrapper.removeClass("col-md-8");
     //articleWrapper.addClass("col-md-9");
-    article.removeClass("col-md-8");
+
+    //article.removeClass("col-md-8");
+
     //article.addClass("col-md-9");
+
     articleWrapper.addClass("shrunk");
-    article.addClass("shrunk");
+    //article.addClass("shrunk");
 
     //mobile
     /*if($(window).width() < 700) {
-        projectsTray.removeClass("slide-out");
-
-        articleWrapper.removeClass("col-md-8");
-        articleWrapper.addClass("col-md-9");
-        articleWrapper.addClass("shrunk");
+        projectsTray.addClass("slide-out");
     }*/
 }
 
 menuArrow.addEventListener("click", openProjectsTray, false);
 
-/*
+
 $(function(){
-    $(".splash-page").typed({
-        strings: ["Hi I'm Jeffrey.", "I'm an Engineering Student", "and I like to code."],
-        typeSpeed: -50,
-        backSpeed: -20,
-        showCursor: true,
-        cursorChar: "|"
+    $(".profile-card .intro-message").typed({
+        strings: ["Hi! My name is Jeffrey and I like to code things :)"],
+        typeSpeed: 40,
+        startDelay: 500,
+        showCursor: false
     });
-});*/
-
-/*
-$(".splash-page").click(function () {
-    $(this).css({'transform' : 'translateX(100%)'});
-});*/
-
-/*
-var cw = $('.card').width();
-$('.card').css({
-    'height': cw + 'px'
-});*/
+});

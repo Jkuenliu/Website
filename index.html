@@ -17,35 +17,14 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
 			  integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Optional theme -->
-		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
-			  integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">-->
 		<!-- Custom Style Sheet-->
 		<link rel="stylesheet" href="styles/index.css"/>
 	</head>
 	
 	<body>
-		<!-- the covers are first together covering the entire website. Afterwards they will split revealing the entire
-		 	 thing -->
-		<!--<div class="splash-page ease-in">
-			<div class="center-center">
-				<img class="circle-pic" src="SmileMan3.jpg">
-			</div>
-		</div>-->
-
-
 		<!-- after splash-page the main page will be revealed -->
 		<div class="page-wrapper">
 			<div class="container-fluid projects-tray ease-in">
-				<!--<div class="projects-tray-header">
-					Projects
-				</div>-->
-				<!--<div class="projects-list">-->
-				<!--<div class="col-md-12">
-					<div class="group-title">
-						Identity
-					</div>
-				</div>-->
 				<div class="col-md-12">
 					<div class="card removed">
 						<div class="card-portrait">
@@ -53,7 +32,7 @@
 						</div>
 						<div class="card-heading">
 							<span class="card-title"> About Me </span>
-							<i class="left-arrow fa fa-caret-left fa-2x" aria-hidden="true"></i>
+							<i class="right-arrow fa fa-caret-right fa-2x" aria-hidden="true"></i>
 						</div>
 					</div>
 				</div>
@@ -64,68 +43,243 @@
 				</div>
 				<div class="col-md-12">
 					<div class="card">
-						<div class="card-portrait">
-							<img src="art.jpg">
-						</div>
+						<img class="card-portrait" src="art.jpg">
 						<div class="card-heading">
 							<span class="card-title"> Personal Website </span>
-							<i class="left-arrow fa fa-caret-left fa-2x" aria-hidden="true"></i>
+							<i class="right-arrow fa fa-caret-right fa-2x" aria-hidden="true"></i>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-12">
 					<div class="card">
-						<div class="card-portrait">
-							<img src="maps0.PNG">
-						</div>
+						<img class="card-portrait" src="maps0.PNG">
 						<div class="card-heading">
 							<span class="card-title"> City Maps </span>
-							<i class="left-arrow fa fa-caret-left fa-2x" aria-hidden="true"></i>
+							<i class="right-arrow fa fa-caret-right fa-2x" aria-hidden="true"></i>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-12">
 					<div class="card">
-						<div class="card-portrait">
-							<img src="pokemon0.PNG">
-						</div>
+						<img class="card-portrait" src="pokemon0.PNG">
 						<div class="card-heading">
 							<span class="card-title"> Verilog Pokemon </span>
-							<i class="left-arrow fa fa-caret-left fa-2x" aria-hidden="true"></i>
+							<i class="right-arrow fa fa-caret-right fa-2x" aria-hidden="true"></i>
 						</div>
 					</div>
 				</div>
-				<!--</div>-->
 			</div>
 
 			<!-- this will help center the article-wrapper -->
-			<div id="article-margin" class="col-md-2"> </div>
+			<!--<div id="article-margin" class="col-md-2"> </div>-->
 
-			<div class="article-wrapper shrunk ease-in">
-				<i id="menu-arrow" class="fa fa-caret-right fa-2x ease-in" aria-hidden="true"></i>
-                <div class="article-background">
-                    <div id="about-me" class="article shrunk show">
-                        <div class="profile-card container-fluid">
-                            <img src="SmileMan3.jpg" class="circle-pic col-md-3 col-xs-12 profile-pic">
-                            <div class="profile-text col-md-5">
-                                Hello my name is Jeffrey! I'm an Electrical Engineering student whose looking to get his
-                                foot in the door with software.
-                                <br>
-                                <br>
-                                Here is some of the projects I have done so far.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				<div id="article-website" class="article shrunk">
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+			<i id="menu-arrow" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+			<div class="article-wrapper optimize col-md-8 shrunk ease-in">
+				<div id="about-me" class="article shrunk show">
+					<div class="profile-card col-md-8">
+						<img src="SmileMan3.jpg" class="circle-pic center profile-pic">
+						<h3 class="intro-message"></h3>
+					</div>
 				</div>
-				<div id="article-maps" class="article shrunk">
-					This is maps
+				<div id="article-website" class="article">
+					<div class="row banner">
+						<h1>
+							JeffreyLiu.com
+						</h1>
+					</div>
+					<br>
+					<div class="row">
+						<h4 class="section-heading">
+							Why
+						</h4>
+						<p>
+							My interest piqued up when my friends started to create their own websites to get themselves
+							and identity online. To me, this looked like a great chance to challenge myself and learn
+							something new.
+						</p>
+					</div>
+					<div class="row">
+						<h4 class="section-heading">
+							Design process
+						</h4>
+						<p>
+							The big question that I wanted to answer when I was building my website was what is the
+							best way to express myself? Personally, it's through my projects where I can show what I value
+							through the decisions I make. So, I was naturally inclined to make a project portfolio.
+
+							Despite tempted to just link every project I did to my GitHub, I don't believe that source code
+							is the right medium to document decision making. I'm not perfect, and my ideas definitely aren't either.
+						</p>
+
+						<img class="article-figure" src="second_attempt3.PNG">
+
+						<p>
+							Keeping track of my thoughts and drafts provides a basis where other people and I can learn
+							what works and what doesn't. I value the learning process that comes from each mistake.
+
+							The most trouble I had with this website was the layout. In the end I decided to follow the
+							footsteps of facebook and youtube.
+						</p>
+
+						<img class="article-figure" src="youtube.PNG">
+
+						<p>
+							From my own standpoint, their layout gave me the ability to focus on the main content while
+							simultaneously providing me a menu of all my accomplishments. As a result, you could focus
+							on both items (main content and projects) without needed to refresh or change the entire screen.
+							It feels quicker and more intuitive that way.
+						</p>
+					</div>
+					<div class="row">
+						<h4 class="section-heading">
+							Trade-Offs
+						</h4>
+						<p>
+							There were a couple of trade-offs I had to make when I kept to this layout. The main problem
+							is accommodating for different screen sizes. The phone is a vertical view port,
+							while the laptop (or desktop) is a horizontal viewport. Simply, separating the screen
+							horizontally will not work with a phone as the sections become too thin. I had to make
+							a compromise resulting in making the user focus on one thing at a time for smaller screen sizes.
+						</p>
+					</div>
+					<div class="row">
+						<h4 class="section-heading">
+							Conclusion
+						</h4>
+						<p>
+
+						</p>
+					</div>
 				</div>
-				<div id="article-pokemon" class="article shrunk">
-					This is pokemon
+				<div id="article-maps" class="article">
+					<div class="row banner">
+						<h1>
+							City Maps
+						</h1>
+					</div>
+					<br>
+
+					<!-- insert picture of project here -->
+
+					<div class="row">
+						<h4 class="section-heading">
+							Prelude
+						</h4>
+						<p>
+							This was a school group project that was designed to used GIS (graphical information system) data
+							to mark locations and find the fastest path between them. It comes with a graphical user
+							interface and a search bar; in essence it's just like google maps.
+						</p>
+					</div>
+					<div class="row">
+						<h4 class="section-heading">
+							Design Goals
+						</h4>
+						<p>
+							The full application was focused on being intuitive and functional. We defined intuitiveness
+							to be its ability to work like most online mapping web applications like Google maps, Bing maps,
+							and Apple maps. Second, functionality was defined by the
+							<a href="http://www.eecg.utoronto.ca/~vaughn/ece297/" target="_blank">constraints</a>
+							set by the course.
+						</p>
+						<img class="article-figure" src="image05.png">
+					</div>
+					<div class="row">
+						<h4 class="section-heading">
+							Interface
+						</h4>
+						<p>
+							Although the interface wasn't much of a problem, the difficulty was choosing the right colour
+							palette for the map. What I noticed about the similarities between most online maps are a couple
+							of things. First is that the main routes are always coloured in some mix of red - google maps
+							and apple maps have the highways coloured orange, while bing maps it's purple. The purpose of this
+							is to get the user's attention on what the important parts of the map should be.
+						</p>
+						<img class="article-figure" src="image14.png">
+						<p>
+
+						</p>
+					</div>
+					<div class="row">
+						<h4 class="section-heading">
+							Algorithms
+						</h4>
+						<p>
+							In section M4, the Travelling Courier Solver required to use the Shortest Path Finder to try
+							to find the fastest path between two landmarks or intersections. Despite it being possible to
+							find the shortest path between two intersections, the
+							<a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem" target="_blank">TSP</a>
+							(traveling salesman problem) that this program is designed to solve unfortunately harbours no
+							absolute answer. There is only better.
+						</p>
+						<p>
+							Our approach to this problem was to use a genetic algorithm. In a nutshell like natural
+							selection, it begins with an initial population and with each passing generation the children
+							will become better adapted to the underlying pressures defined by the system. In this case
+							the pressure is the the set with the longest overall path will be eliminated.
+							Therefore algorithm speed, the ability to run through as many iterations (or generations)
+							as possible is paramount. In order to optimize the final solution, I implemented multi-threading.
+							Specifically this would allow our program to compute the fastest path between multiple intersections
+							simultaneously. The result was a 14 percent increase in speed.
+						</p>
+
+						<img class="article-figure" src="image01.png">
+						<img class="article-figure" src="image08.png">
+					</div>
+				</div>
+				<div id="article-pokemon" class="article">
+					<div class="row banner">
+						<h1>
+							Verilog Pokemon
+						</h1>
+					</div>
+					<br>
+					<div class="row">
+						<video id="pokemon-video" class="article-figure" controls>
+							<source src="verilogPokemon.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						<h4 class="section-heading">
+							Prelude
+						</h4>
+						<p>
+							This one was a personal favorite of mine. Ever since I was a kid I have always been a big
+							fan of Pokemon. So given complete creative freedom for this project, I had to naturally
+							lean to my childhood.
+						</p>
+					</div>
+					<div class="row">
+						<h4 class="section-heading">
+							Design Goals
+						</h4>
+						<p>
+							There were no specific requirements for this project, so the only thing I was working towards
+							was to make my game as authentic as possible.
+						</p>
+					</div>
+					<div class="row">
+						<h4 class="section-heading">
+							Architecture
+						</h4>
+						<p>
+							This entire thing was done in Verilog, a <a href="https://en.wikipedia.org/wiki/Hardware_description_language" target="_blank">
+							hardware description language </a> (HDL). Unlike most programming languages, with Verilog I
+							had to create custom hardware using a FPGA to control every single pixel on the screen. So
+							how did I do it? The two main components that were needed was the control path and the
+							data path. The control path is designed to send signals to the data path to tell it to run
+							certain animations or drawings based on the input of the user. Control path == brain and
+							the data path == the arms and legs.
+						</p>
+
+						<img class="article-figure" src="controlpath0.PNG">
+						<img class="article-figure" src="controlpath1.PNG">
+						<img class="article-figure" src="controlpath2.PNG">
+						<img class="article-figure" src="controlpath3.PNG">
+						<img class="article-figure" src="datapath0.PNG">
+						<img class="article-figure" src="datapath1.PNG">
+						<img class="article-figure" src="datapath2.PNG">
+
+					</div>
 				</div>
 			</div>
 
